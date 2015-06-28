@@ -3,7 +3,7 @@
 [push]
   default = current
 [color]
-  ui = auto
+  ui = true
 [alias]
   aa = add --all
   ap = add --patch
@@ -19,11 +19,12 @@
   st = status
   up = !git fetch origin && git rebase origin/master
 [core]
-	excludesfile = /home/mus/.gitignore_global
+  excludesfile = /home/mus/.gitignore_global
   autocrlf = input
 [commit]
   template = ~/.gitmessage
 [fetch]
   prune = true
-[include]
-  path = ~/.gitconfig.local
+[user]
+  name = Michal Musialik
+  email = michal@michalmusialik.com

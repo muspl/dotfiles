@@ -31,5 +31,9 @@ alias s="rspec"
 # Pretty print the path
 alias path="echo $PATH | tr -s ':' '\n'"
 
-# Include custom aliases
-[[ -f ~/.aliases.local ]] && source ~/.aliases.local
+# Servers
+alias vps='ssh vps156082.ovh.net'
+alias act='ssh michal@csa.plandzialan.pl'
+
+# Process and workflow
+alias sr='screen -r'

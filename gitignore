@@ -9,3 +9,6 @@ tags
 !tags/
 tmp/**/*
 !tmp/cache/.keep
+
+*.swp
+.ruby-version

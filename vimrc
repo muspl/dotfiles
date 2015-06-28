@@ -154,6 +154,28 @@ set spellfile=$HOME/.vim-spell-en.utf-8.add
 set diffopt+=vertical
 
 " Local config
-if filereadable($HOME . "/.vimrc.local")
-  source ~/.vimrc.local
-endif
+set t_Co=256
+colorscheme solarized
+set background=light
+
+" map <tab> za
+" set foldmethod=syntax
+" set foldlevel=1
+
+" Don't screw up folds when inserting text that might affect them, until
+" leaving insert mode. Foldmethod is local to the window. Protect against
+" screwing up folding when switching between windows.
+autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
+autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
+
+" NERDTree mappings
+nmap ,n :NERDTreeFind<CR>
+nmap ,m :NERDTreeToggle<CR>
+let g:NERDTreeIgnore = ['node_modules', 'bower_components']
+
+" CtrlP
+let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|DS_Store\|git\|tmp'
+
+" Ruby syntax for .axlsx files
+au BufNewFile,BufRead *.axlsx set filetype=ruby
+au BufNewFile,BufRead *.jbuiilder set filetype=ruby
