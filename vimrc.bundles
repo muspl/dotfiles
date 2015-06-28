@@ -45,13 +45,13 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/tComment'
 
 " My plugins
-Plugin 'scrooloose/nerdtree'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'muspl/vim-snippets'
-Plugin 'Raimondi/delimitMate'
-Plugin 'digitaltoad/vim-jade'
+Plug 'scrooloose/nerdtree'
+Plug 'altercation/vim-colors-solarized'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'muspl/vim-snippets'
+Plug 'Raimondi/delimitMate'
+Plug 'digitaltoad/vim-jade'
 
 call plug#end()
