@@ -157,7 +157,7 @@ set diffopt+=vertical
 " Local config
 set t_Co=256
 colorscheme solarized
-set background=light
+set background=dark
 
 " map <tab> za
 " set foldmethod=syntax

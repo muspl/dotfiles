@@ -13,8 +13,9 @@
   co = checkout
   st = status
 [core]
-  excludesfile = /home/mus/.gitignore_global
+  excludesfile = /home/mus/.gitignore
   autocrlf = input
+  rustctime = false
 [commit]
   template = ~/.gitmessage
 [fetch]
