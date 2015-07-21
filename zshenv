@@ -19,3 +19,8 @@ export PATH=./bin:$PATH
 
 # NVM
 [[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh"
+
+# Local env variables
+if [ -f ~/.env_vars.local ]; then
+    . ~/.env_vars.local
+fi
